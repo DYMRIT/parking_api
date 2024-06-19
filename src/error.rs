@@ -10,6 +10,7 @@ pub type Result<T> = core::result::Result<T, Error>;
 pub enum Error {
     FailToCreateCon,
     ErrorGetInfoFromDb,
+    FailedDeleteDataFromDb,
 
 
     FailedHttpGetParking,
@@ -25,6 +26,7 @@ pub enum Error {
     FailedFoundCenter,
     FailedConvertType,
     AuthFailNoAuthTokenCookie,
+    WrongCookie
 }
 
 
